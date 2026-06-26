@@ -30,7 +30,11 @@ stargen
     var(Li) randomizedsurface = %random(1,3)
 
     if var(Li) randomizedsurface < 2
-        appendvallue
+        shiftindirection
+            var(Li) loc =
+            var(Li) loc
+            num -0.2
+        appendvalue
             list(G) land
             var(Li) loc
     else if var(Li) randomizedsurface >= 2
