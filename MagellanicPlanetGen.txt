@@ -1,0 +1,55 @@
+if join
+    setplayertime = 21000
+    if val playercount = 1
+        process gameloop
+
+gameloop
+    createlist 
+        var(G) water
+    createlist 
+        var(G) land
+    function stargen
+    process render
+    while true
+        styledtext
+            var(G) cpu =
+            str "cpu usage"
+            val cpu usage
+            str "%"
+        actionbar(allplayers)
+            var(G) cpu
+        wait
+
+stargen
+    var loadingamount = 1
+    repeat sphere(var(Li), location(25,57,25), %random(1,5), 500)
+    var(Li) randomizedsurface = %random(1,2)
+    if var(Li) randomizedsurface = 1
+        appendvallue
+            list(G) land
+            var(Li) loc
+    else if var(Li) randomizedsurface = 2
+        appendvallue
+            list(G) water
+            var(Li) loc
+    loadingamount += 1
+    styledtext
+        var(G) loading =
+        str "loading"
+        var(G) loadingamount
+        str "/500"
+    actionbar(allplayers)
+        var(G) loading
+    wait
+
+render
+    while true
+        foreach(var(Li) i, var(G) water)
+            particle(allplayers)
+                par 1x trail(#0077be)
+                var(Li) if
+        foreach(var(Li) i, var(G) land)
+            particle(allplayers)
+                par 1x trail(#7cfc00)
+                var(Li) if
+        wait
