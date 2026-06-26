@@ -1,2 +1,2 @@
 # Magellanic
-Is a project on diamond fire, this is it's documentation
+is a DF plot which tries to simulate planets and stars
