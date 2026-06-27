@@ -26,14 +26,14 @@ gameloop
 
 stargen
     var loadingamount = 1
-    repeat sphere(var(Li), location(25,57,25), %random(1,5), 600)
+    repeat sphere(var(Li), location(25,57,25), %random(2,4), 600)
     var(Li) randomizedsurface = %random(2,4)
 
     if var(Li) randomizedsurface < 2
         shiftindirection
             var(Li) loc =
             var(Li) loc
-            num -0.2
+            num -0.3
         appendvalue
             list(G) land
             var(Li) loc
@@ -58,12 +58,12 @@ render
     while true
         foreach(var(Li) i, var(G) water)
             particle(allplayers)
-                par 1x trail(#0077be)
+                par 1x dust(#0077be)
                 var(Li) if
 
         foreach(var(Li) i, var(G) land)
             particle(allplayers)
-                par 1x trail(#7cfc00)
+                par 1x dust(#7cfc00)
                 var(Li) if
 
         wait
