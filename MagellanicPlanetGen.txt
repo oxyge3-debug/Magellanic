@@ -59,11 +59,25 @@ render
         foreach(var(Li) i, var(G) water)
             particle(allplayers)
                 par 1x dust(#04789b)
-                var(Li) if
+                var(Li) i
+            shiftindirection
+                var(Li) i
+                var(Li) i
+                num -0.5
+            particle(allplayers)
+                par 1x trail(#e4efff)
+                var(Li) i
 
         foreach(var(Li) i, var(G) land)
             particle(allplayers)
                 par 1x dust(#185E3F)
-                var(Li) if
+                var(Li) i
+            shiftindirection
+                var(Li) i
+                var(Li) i
+                num -0.2
+            particle(allplayers)
+                par 1x trail(#e4efff)
+                var(Li) i
 
         wait
