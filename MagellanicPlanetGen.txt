@@ -65,7 +65,7 @@ render
                 var(Li) i
                 num -0.7
             particle(allplayers)
-                par 1x trail(#e4efff)
+                par 1x trail(#7facc7)
                 var(Li) i
 
         foreach(var(Li) i, var(G) land)
@@ -77,7 +77,7 @@ render
                 var(Li) i
                 num -0.4
             particle(allplayers)
-                par 1x trail(#e4efff)
+                par 1x trail(#7facc7)
                 var(Li) i
 
         wait
