@@ -58,12 +58,12 @@ render
     while true
         foreach(var(Li) i, var(G) water)
             particle(allplayers)
-                par 1x dust(#0077be)
+                par 1x dust(#04789b)
                 var(Li) if
 
         foreach(var(Li) i, var(G) land)
             particle(allplayers)
-                par 1x dust(#7cfc00)
+                par 1x dust(#185E3F)
                 var(Li) if
 
         wait
