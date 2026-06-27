@@ -1,5 +1,4 @@
 if join
-    setplayertime = 21000
     if val playercount = 1
         process gameloop
 
