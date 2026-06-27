@@ -26,7 +26,7 @@ gameloop
 
 stargen
     var loadingamount = 1
-    repeat sphere(var(Li), location(25,57,25), %random(1,5), 500)
+    repeat sphere(var(Li), location(25,57,25), %random(1,5), 600)
     var(Li) randomizedsurface = %random(2,4)
 
     if var(Li) randomizedsurface < 2
@@ -47,7 +47,7 @@ stargen
         var(G) loading =
         str "loading"
         var(G) loadingamount
-        str "/500"
+        str "/600"
 
     actionbar(allplayers)
         var(G) loading
