@@ -1,5 +1,5 @@
 if join
-    setplayertime = 13000
+    setplayertime = 21000
     if val playercount = 1
         process gameloop
 
@@ -63,7 +63,7 @@ render
             shiftindirection
                 var(Li) i
                 var(Li) i
-                num -0.6
+                num -0.7
             particle(allplayers)
                 par 1x trail(#e4efff)
                 var(Li) i
@@ -75,7 +75,7 @@ render
             shiftindirection
                 var(Li) i
                 var(Li) i
-                num -0.3
+                num -0.4
             particle(allplayers)
                 par 1x trail(#e4efff)
                 var(Li) i
