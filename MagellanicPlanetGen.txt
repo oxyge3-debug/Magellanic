@@ -1,7 +1,8 @@
+plotstartup
+    process gameloop
 if join
+    setflight = true
     setplayertime = 21000
-    if val playercount = 1
-        process gameloop
 
 gameloop
     createlist 
