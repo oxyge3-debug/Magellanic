@@ -54,7 +54,8 @@ stargen
         var(G) loading =
         str "loading"
         var(G) loadingamount
-        str "/600"
+        str "/"
+        str "600"
 
     actionbar(allplayers)
         var(G) loading
@@ -63,6 +64,7 @@ stargen
 
 render
     while true
+        function rotation
         foreach(var(Li) i, var(G) water)
             particle(allplayers)
                 par 1x dust(#04789b)
