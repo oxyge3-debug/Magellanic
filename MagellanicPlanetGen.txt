@@ -15,18 +15,21 @@ gameloop
         var(G) land
 
     function stargen
-    process render
+    process ring
     while true
-        styledtext
-            var(G) cpu =
-            str "cpu usage"
-            val cpu usage
-            str "%"
+        repeatmultiple 2400
+            process render
+            styledtext
+                var(G) cpu =
+                str "cpu usage"
+                val cpu usage
+                str "%"
 
-        actionbar(allplayers)
-            var(G) cpu
+            actionbar(allplayers)
+                var(G) cpu
 
-        wait
+            wait
+        function stargen
 
 stargen
     var loadingamount = 1
