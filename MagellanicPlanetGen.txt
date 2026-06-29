@@ -1,6 +1,9 @@
 plotstartup
     process gameloop
 if join
+    teleport
+    giveitems
+        spyglass
     setflight = true
     setplayertime = 21000
 
